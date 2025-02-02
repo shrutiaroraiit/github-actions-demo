@@ -1,0 +1,17 @@
+name: My GitHub Action
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: 22f3002050@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
